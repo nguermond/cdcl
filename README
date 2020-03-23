@@ -1,0 +1,25 @@
+The files in this directory are compiled with 'ocamlbuild' 0.12.0 or 0.14.0, with 'Ocaml' 4.07 or 4.09 (as respectively tested).
+
+To compile:
+>> ocamlbuild sudoku.native
+
+and to run:
+>> ./sudoku.native
+
+this will run all problems in 'puzzles.sdk' starting from 0.
+
+To choose a specific problem, edit the function 'main()' in sudoku.ml.
+
+------------------------------------
+
+The file descriptions and dependencies are as follows:
+
+>sudoku.ml -- sudoku encoding, program start
+ >cdcl.ml -- cdcl algorithm
+  >graphs.ml -- dependency graph
+   >formulas.ml -- literals, clauses, formulas, and models
+    >utility.ml -- list, string, and option operations
+>puzzles.sdk -- sudoku puzzles
+>output.txt -- output with running time of each sudoku puzzle
+>report.pdf -- project report
+>README -- this file
